@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHealthHub - Campus Health Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-heartbeat me-2"></i>StudentHealthHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home"><i class="fas fa-home me-1"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services"><i class="fas fa-concierge-bell me-1"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#appointments"><i class="fas fa-calendar-check me-1"></i> Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources"><i class="fas fa-book-medical me-1"></i> Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"><i class="fas fa-info-circle me-1"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fas fa-envelope me-1"></i> Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button id="themeToggle" class="btn btn-sm btn-outline-light">
+                            <i class="fas fa-moon"></i> <span class="d-none d-sm-inline">Dark Mode</span>
+                        </button>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-lg-block">
+                        <a href="login.php" class="btn btn-sm btn-light">
+                            <i class="fas fa-user-md me-1"></i> Admin Portal
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4">Your Campus Health Companion</h1>
+                    <p class="lead mb-4">Comprehensive healthcare services designed specifically for college students, available right at your fingertips.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#appointments" class="btn btn-primary btn-lg px-4">
+                            <i class="fas fa-calendar-plus me-2"></i> Book Appointment
+                        </a>
+                        <a href="#services" class="btn btn-outline-primary btn-lg px-4">
+                            <i class="fas fa-search me-2"></i> Explore Services
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="images/health-illustration.svg" alt="Healthcare illustration" class="img-fluid" style="max-height: 400px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Our Healthcare Services</h2>
+                <p class="section-subtitle">Comprehensive care designed for student needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-user-md"></i>
+                            </div>
+                            <h5 class="card-title">General Consultation</h5>
+                            <p class="card-text">Professional medical consultations for common health concerns and illnesses.</p>
+                            <a href="#appointments" class="btn btn-sm btn-outline-primary mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h5 class="card-title">Mental Health</h5>
+                            <p class="card-text">Confidential counseling and mental health support services.</p>
+                            <a href="#appointments" class="btn btn-sm btn-outline-primary mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-syringe"></i>
+                            </div>
+                            <h5 class="card-title">Immunizations</h5>
+                            <p class="card-text">Vaccinations and immunization services to keep you protected.</p>
+                            <a href="#appointments" class="btn btn-sm btn-outline-primary mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 service-card border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="service-icon mb-3">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h5 class="card-title">Wellness Programs</h5>
+                            <p class="card-text">Health education and wellness initiatives for student wellbeing.</p>
+                            <a href="#appointments" class="btn btn-sm btn-outline-primary mt-2">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointments Section -->
+    <section id="appointments" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4"><i class="fas fa-calendar-alt me-2"></i> Book an Appointment</h2>
+                    <p class="mb-4">Schedule your visit with our healthcare professionals quickly and easily.</p>
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <form id="appointmentForm" action="php/store_appointment.php" method="POST">
+                                <div class="mb-3">
+                                    <label for="serviceType" class="form-label">Service Type</label>
+                                    <select class="form-select" id="serviceType" name="serviceType" required>
+                                        <option value="" selected disabled>Select a service</option>
+                                        <option value="General Consultation">General Consultation</option>
+                                        <option value="Mental Health">Mental Health</option>
+                                        <option value="Immunization">Immunization</option>
+                                        <option value="Sports Medicine">Sports Medicine</option>
+                                        <option value="Nutrition Counseling">Nutrition Counseling</option>
+                                    </select>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="appointmentDate" class="form-label">Date</label>
+                                        <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="appointmentTime" class="form-label">Time</label>
+                                        <input type="time" class="form-control" id="appointmentTime" name="appointmentTime" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="appointmentNotes" class="form-label">Notes (Optional)</label>
+                                    <textarea class="form-control" id="appointmentNotes" name="appointmentNotes" rows="3" placeholder="Any specific concerns or information..."></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-calendar-check me-2"></i> Book Appointment
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <h3 class="mb-4"><i class="fas fa-clock me-2"></i> Available Time Slots</h3>
+                    <div class="time-slots mb-4">
+                        <div class="row g-2" id="timeSlotsContainer">
+                            <!-- Time slots will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h4><i class="fas fa-list-ul me-2"></i> Your Appointments</h4>
+                        <div class="list-group" id="upcomingAppointments">
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">General Consultation</h5>
+                                    <small class="text-muted">June 25, 2023</small>
+                                </div>
+                                <p class="mb-1"><i class="fas fa-clock me-1"></i> 10:30 AM - 11:00 AM</p>
+                                <small class="text-muted"><i class="fas fa-user-md me-1"></i> Dr. Sarah Johnson</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Health Resources</h2>
+                <p class="section-subtitle">Educational materials to support your health journey</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 resource-card border-0 shadow-sm">
+                        <img src="images/mental-health.jpg" class="card-img-top" alt="Mental Health">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-brain me-2"></i> Mental Health Resources</h5>
+                            <p class="card-text">Articles, guides, and tools to support your mental wellbeing throughout your academic journey.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                                <small class="text-muted">Updated weekly</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 resource-card border-0 shadow-sm">
+                        <img src="images/nutrition.jpg" class="card-img-top" alt="Nutrition">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-utensils me-2"></i> Nutrition Guides</h5>
+                            <p class="card-text">Healthy eating tips and meal plans designed specifically for busy college students.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                                <small class="text-muted">15+ articles</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 resource-card border-0 shadow-sm">
+                        <img src="images/fitness.jpg" class="card-img-top" alt="Fitness">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-running me-2"></i> Fitness Programs</h5>
+                            <p class="card-text">Workout routines and exercise programs you can do in your dorm or campus gym.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                                <small class="text-muted">8 programs</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/about-us.jpeg" alt="About StudentHealthHub" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">About StudentHealthHub</h2>
+                    <p>StudentHealthHub is a comprehensive web-based platform designed to streamline healthcare services for college students by integrating appointment scheduling, health record management, health resources, and telehealth services into one accessible system.</p>
+                    <p>Our mission is to improve student wellness outcomes, increase healthcare service utilization, and enhance the efficiency of campus health operations.</p>
+                    <div class="mt-4">
+                        <h5>Key Features:</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-primary me-2"></i> Secure online appointment scheduling
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-primary me-2"></i> Digital health records management
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-primary me-2"></i> Virtual telehealth consultations
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fas fa-check-circle text-primary me-2"></i> Comprehensive wellness resources
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-3">Contact Our Health Center</h2>
+                <p class="section-subtitle">We're here to help with all your health concerns</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body p-4">
+                            <form id="contactForm" action="php/store_contact.php" method="POST">
+                                <div class="mb-3">
+                                    <label for="contactName" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="contactName" name="contactName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="contactEmail" name="contactEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactSubject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="contactSubject" name="contactSubject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label">Message</label>
+                                    <textarea class="form-control" id="contactMessage" name="contactMessage" rows="4" required></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-paper-plane me-2"></i> Send Message
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm border-0 h-100">
+                        <div class="card-body p-4">
+                            <h4 class="mb-4"><i class="fas fa-info-circle me-2"></i> Health Center Information</h4>
+                            <div class="contact-info mb-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h5 class="mb-1">Location</h5>
+                                        <p class="mb-0">Student Health Center<br>123 University Avenue<br>Campus Town, ST 12345</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-phone-alt text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h5 class="mb-1">Phone</h5>
+                                        <p class="mb-0">(123) 456-7890</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start mb-3">
+                                    <i class="fas fa-envelope text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h5 class="mb-1">Email</h5>
+                                        <p class="mb-0">healthcenter@university.edu</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <i class="fas fa-clock text-primary me-3 mt-1"></i>
+                                    <div>
+                                        <h5 class="mb-1">Hours</h5>
+                                        <p class="mb-0">Monday-Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 2:00 PM<br>Sunday: Closed</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map-container ratio ratio-16x9">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425872426637!3d40.74076987932881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sMadison%20Square%20Garden!5e0!3m2!1sen!2sus!4v1689878907893!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="mb-3">
+                        <i class="fas fa-heartbeat me-2"></i>StudentHealthHub
+                    </h5>
+                    <p>Your comprehensive campus health solution, providing integrated healthcare services for students.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white">Home</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white">Services</a></li>
+                        <li class="mb-2"><a href="#appointments" class="text-white">Appointments</a></li>
+                        <li class="mb-2"><a href="#resources" class="text-white">Resources</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">General Consultation</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Mental Health</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Immunizations</a></li>
+                        <li><a href="#" class="text-white">Wellness Programs</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-3">Newsletter</h5>
+                    <p>Subscribe to our newsletter for health tips and updates.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p><i class="fas fa-shield-alt me-2"></i>Your data is securely encrypted</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 StudentHealthHub. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">
+                        <a href="#" class="text-white me-3">Privacy Policy</a>
+                        <a href="#" class="text-white">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
